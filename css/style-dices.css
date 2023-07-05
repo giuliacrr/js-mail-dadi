@@ -1,0 +1,24 @@
+.width-ow {
+  width:800px;
+  background-color:#1f74;
+  margin:auto;
+}
+
+
+.width-small {
+  width:50%;
+}
+.input-width {
+  width:100px;
+}
+.box-size {
+  height:70.17px;
+  width:120.04px;
+}
+.size {
+  height:38.10px;
+  width:100px;
+  background-color: white;
+  border: 1px solid rgb(218, 218, 218);
+}
+

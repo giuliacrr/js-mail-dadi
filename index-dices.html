@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="css/style-dices.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://boolean.careers/favicon/favicon-16x16.png">
+  <title>Let's play Dices</title>
+</head>
+
+<body>
+  <header class="bg-warning text-center p-3">
+    <h1>*Insert original name for dice game*</h1>
+  </header>
+  <main class=" d-flex width-ow mt-5">
+    <div class="width-small">
+      <div class="p-5">
+        <h3>Roll 3d20.</h3>
+        <p class="">For Agility.<br> Except you wear heavy armor.<br> Against a rogue.<br><strong>Who will
+            win?</strong>
+        </p>
+        <div class="mt-5 pt-5">
+          <!--You Rolled-->
+          <div>
+            <span>You rolled: <span class="fw-bold" id="you-roll"></span></span>
+          </div>
+          <!--Pc Rolled-->
+          <div>
+            <span>PC rolled: <span class="fw-bold" id="pc-roll"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="width-small">
+      <div class="p-5">
+        <!--USER ROLLS-->
+        <div class="d-flex">
+          <div class="width-small" id="you">
+            <h3 class="text-center">You</h3>
+            <form class="rounded p-3">
+              <div class="mb-3 text-center">
+                <label for="InputNumber1" class="form-label">Numero 1</label>
+                <input type="text" class="form-control input-width m-auto" id="InputNumber1">
+              </div>
+              <div class="mb-3 text-center">
+                <label for="InputNumber2" class="form-label">Numero 2</label>
+                <input type="text" class="form-control input-width m-auto" id="InputNumber2">
+              </div>
+              <div class="mb-3 text-center">
+                <label for="InputNumber3" class="form-label">Numero 3</label>
+                <input type="text" class="form-control input-width m-auto" id="InputNumber3">
+              </div>
+            </form>
+          </div>
+          <!--PC ROLLS-->
+          <div divclass="width-small" id="PC">
+            <h3 class="text-center">PC</h3>
+            <form class=" rounded p-3">
+              <!--First Roll-->
+              <div class="mb-3 text-center box-size">
+                <div class="mb-2">Numero 1</div>
+                <div class="size rounded m-auto d-flex align-item-center justify-content-center"><span
+                    id="first-roll"></span></div>
+              </div>
+              <!--Second Roll-->
+              <div class="mb-3 text-center box-size">
+                <div class="mb-2">Numero 2</div>
+                <div class="size rounded m-auto d-flex align-item-center justify-content-center"><span
+                    id="second-roll"></span></div>
+              </div>
+              <!--Third Roll-->
+              <div class="mb-3 text-center box-size">
+                <div class="mb-2">Numero 3</div>
+                <div class="size rounded m-auto d-flex align-item-center justify-content-center"><span
+                    id="third-roll"></span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--ROLL BUTTON-->
+        <div class="d-flex justify-content-center"><button type="button" id="btn-submit"
+            class="btn bg-warning text-white">Roll</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--..........BOOTSTRAP JS..........-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!--..........JS LINK..........-->
+  <script src="js/js-dices.js"></script>
+</body>
+
+</html>
