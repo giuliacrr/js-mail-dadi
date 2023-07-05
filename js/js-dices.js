@@ -32,6 +32,11 @@ btnRoll.addEventListener("click", function () {
   const userSecondRoll = parseInt(userSecondDice.value);
   const userThirdRoll = parseInt(userThirdDice.value);
   const userRollsSum = userFirstRoll + userSecondRoll + userThirdRoll;
+  //User number validator
+  if (userFirstRoll < 1 || userFirstRoll > 20 || isNaN(userFirstRoll) || userSecondRoll < 1 || userSecondRoll > 20 || isNaN(userSecondRoll) || userThirdRoll < 1 || userThirdRoll > 20 || isNaN(userThirdRoll)) {
+    alert("Invalid input. Numbers must be in between 1 and 20. Page reloading! Beep boop. I'm a good alert.");
+    location.reload();
+  }
   //console print User
   console.log(userFirstRoll);
   console.log(userSecondRoll);
